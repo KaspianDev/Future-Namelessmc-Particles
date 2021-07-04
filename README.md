@@ -1,4 +1,5 @@
 # NamelessMC-Particles
+Updated & upgraded by Squad3.
 A [particles.js](https://vincentgarreau.com/particles.js) module for NamelessMC v2.
 
 ## Requirements:
