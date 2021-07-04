@@ -14,7 +14,7 @@ class Particles_Module extends Module {
 		$name = 'Particles';
 		$author = '<a href="https://samerton.me" target="_blank" rel="nofollow noopener">Samerton</a>, <a href="https://vincentgarreau.com/particles.js/" target="_blank" rel="noopener nofollow">particles.js</a>';
 		$module_version = '1.0.0';
-		$nameless_version = '2.0.0-pr6';
+		$nameless_version = '2.0.0-pr9';
 
 		parent::__construct($this, $name, $author, $module_version, $nameless_version);
 
@@ -82,6 +82,19 @@ class Particles_Module extends Module {
 				if(strpos($template, '<div class="ui masthead') !== false && strpos($template, 'particles-js') === false){
 					try {
 						file_put_contents(ROOT_PATH . '/custom/templates/DefaultRevamp/navbar.tpl', str_replace('<div class="ui masthead', '<div id="particles-js"></div><div class="ui masthead', $template));
+					} catch(Exception $e){
+						// Unable to add to template
+					}
+				}
+			}
+			
+						// Default revamp
+			if(file_exists(ROOT_PATH . '/custom/templates/Futurium/navbar.tpl')){
+				$template = file_get_contents(ROOT_PATH . '/custom/templates/Futurium/navbar.tpl');
+
+				if(strpos($template, '<div class="ui masthead') !== false && strpos($template, 'particles-js') === false){
+					try {
+						file_put_contents(ROOT_PATH . '/custom/templates/Futurium/navbar.tpl', str_replace('<div class="ui masthead', '<div id="particles-js"></div><div class="ui masthead', $template));
 					} catch(Exception $e){
 						// Unable to add to template
 					}
