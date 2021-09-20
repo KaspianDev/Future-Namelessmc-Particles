@@ -2,7 +2,7 @@
 /*
  *	Made by Samerton
  *  https://github.com/samerton
- *  NamelessMC version 2.0.0-pr6
+ *  NamelessMC version 2.0.0-pr11
  *
  *  License: MIT
  *
@@ -14,7 +14,7 @@ class Particles_Module extends Module {
 		$name = 'Particles';
 		$author = '<a href="https://samerton.me" target="_blank" rel="nofollow noopener">Samerton</a>, <a href="https://vincentgarreau.com/particles.js/" target="_blank" rel="noopener nofollow">particles.js</a>';
 		$module_version = '1.0.0';
-		$nameless_version = '2.0.0-pr10';
+		$nameless_version = '2.0.0-pr11';
 
 		parent::__construct($this, $name, $author, $module_version, $nameless_version);
 
