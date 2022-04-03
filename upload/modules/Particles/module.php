@@ -14,7 +14,7 @@ class Particles_Module extends Module {
 		$name = 'Particles';
 		$author = '<a href="https://samerton.me" target="_blank" rel="nofollow noopener">Samerton</a>, <a href="https://vincentgarreau.com/particles.js/" target="_blank" rel="noopener nofollow">particles.js</a>';
 		$module_version = '1.0.0';
-		$nameless_version = '2.0.0-pr11';
+		$nameless_version = '2.0.0-pr12';
 
 		parent::__construct($this, $name, $author, $module_version, $nameless_version);
 
@@ -51,7 +51,7 @@ class Particles_Module extends Module {
 			    position: fixed;
 			    width: 100%;
 			    height: 100%;
-			    z-index: 0;
+			    z-index: -1;
 			    pointer-events: none
 			}
 			.home-header, .masthead {
