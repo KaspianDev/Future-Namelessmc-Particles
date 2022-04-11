@@ -2,7 +2,7 @@
 /*
  *	Made by Samerton
  *  https://github.com/samerton
- *  NamelessMC version 2.0.0-pr11
+ *  NamelessMC version 2.0.0-pr12
  *
  *  License: MIT
  *
@@ -11,9 +11,9 @@
 
 class Particles_Module extends Module {
 	public function __construct(){
-		$name = 'Particles';
-		$author = '<a href="https://samerton.me" target="_blank" rel="nofollow noopener">Samerton</a>, <a href="https://vincentgarreau.com/particles.js/" target="_blank" rel="noopener nofollow">particles.js</a>';
-		$module_version = '1.0.0';
+		$name = 'Futurium Particles';
+		$author = '<a href="https://samerton.me" target="_blank" rel="nofollow noopener">Samerton</a>, <a href="https://github.com/KaspianDev" target="_blank" rel="nofollow noopener">Kaspian</a>, <a href="https://vincentgarreau.com/particles.js/" target="_blank" rel="noopener nofollow">particles.js</a>';
+		$module_version = '1.1.0';
 		$nameless_version = '2.0.0-pr12';
 
 		parent::__construct($this, $name, $author, $module_version, $nameless_version);
@@ -39,10 +39,10 @@ class Particles_Module extends Module {
 	public function onPageLoad($user, $pages, $cache, $smarty, $navs, $widgets, $template){
 		if(defined('FRONT_END') && $template){
 			$template->addJSFiles(array(
-				(defined('CONFIG_PATH') ? CONFIG_PATH : '') . '/modules/Particles/particles/particles.min.js' => array()
+				(defined('CONFIG_PATH') ? CONFIG_PATH : '') . '/modules/FuturiumParticles/particles/particles.min.js' => array()
 			));
 			$template->addJSScript('
-			particlesJS.load(\'particles-js\', \'' . (defined('CONFIG_PATH') ? CONFIG_PATH : '') . '/modules/Particles/particles/particles.json' . '\', function() {
+			particlesJS.load(\'particles-js\', \'' . (defined('CONFIG_PATH') ? CONFIG_PATH : '') . '/modules/FuturiumParticles/particles/particles.json' . '\', function() {
 				// Loaded
 			});
 			');
@@ -89,7 +89,7 @@ class Particles_Module extends Module {
 				}
 			}
 			
-						// Default revamp
+						// Futurium
 			if(file_exists(ROOT_PATH . '/custom/templates/Futurium/navbar.tpl')){
 				$template = file_get_contents(ROOT_PATH . '/custom/templates/Futurium/navbar.tpl');
 
