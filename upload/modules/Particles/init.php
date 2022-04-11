@@ -9,5 +9,5 @@
  *  Particles.js module for NamelessMC
  */
 
-require_once(ROOT_PATH . '/modules/Particles/module.php');
+require_once(ROOT_PATH . '/modules/FuturiumParticles/module.php');
 $module = new Particles_Module();
