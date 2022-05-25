@@ -11,4 +11,4 @@ NamelessMC version 2.0.0 pre-release 11
 - (Optional) Customise the **particles.json** file in **modules/Particles/particles**
 
 ## Notes:
-- Made for the Default and DefaultRevamp templates. There may be issues with other templates if they don't already include support for this module.
+- Made for Futurium template. There may be issues with other templates if they don't already include support for this module.
