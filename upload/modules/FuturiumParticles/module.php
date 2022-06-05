@@ -10,10 +10,10 @@
  *  Particles.js module for NamelessMC
  */
 
-class Particles_Module extends Module {
+class FuturiumParticles_Module extends Module {
 
 	public function __construct(){
-		$name = 'Particles';
+		$name = 'Futurium-Particles';
 		$author = '<a href="https://samerton.me" target="_blank" rel="nofollow noopener">Samerton</a>, <a href="https://vincentgarreau.com/particles.js/" target="_blank" rel="noopener nofollow">particles.js</a>, <a href="https://futurium.net/">Kaspian</a>';
 		$module_version = '1.0.0';
 		$nameless_version = '2.0.0-pr13';
@@ -46,10 +46,10 @@ class Particles_Module extends Module {
 	public function onPageLoad(User $user, Pages $pages, Cache $cache, Smarty $smarty, $navs, Widgets $widgets, ?TemplateBase $template){
 		if(defined('FRONT_END') && $template){
 			$template->addJSFiles(array(
-				(defined('CONFIG_PATH') ? CONFIG_PATH : '') . '/modules/Particles/particles/particles.min.js' => array()
+				(defined('CONFIG_PATH') ? CONFIG_PATH : '') . '/modules/FuturiumParticles/particles/particles.min.js' => array()
 			));
 			$template->addJSScript('
-			particlesJS.load(\'particles-js\', \'' . (defined('CONFIG_PATH') ? CONFIG_PATH : '') . '/modules/Particles/particles/particles.json' . '\', function() {
+			particlesJS.load(\'particles-js\', \'' . (defined('CONFIG_PATH') ? CONFIG_PATH : '') . '/modules/FuturiumParticles/particles/particles.json' . '\', function() {
 				// Loaded
 			});
 			');
