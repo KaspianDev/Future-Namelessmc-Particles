@@ -1,9 +1,9 @@
 # NamelessMC-Particles
-Updated & upgraded by Squad3.
+Updated & upgraded by Squad3, Kaspian.
 A [particles.js](https://vincentgarreau.com/particles.js) module for NamelessMC v2.
 
 ## Requirements:
-NamelessMC version 2.0.0 pre-release 11
+NamelessMC version 2.0.0 pre-release 13
 
 ## Installation:
 - Upload the contents of the upload directory straight into your NamelessMC installation's directory
